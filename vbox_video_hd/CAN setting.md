@@ -7,12 +7,20 @@
 ## 설정 내역
 
 ### 공통 사항
+
+아래 그림 참조하여 각 데이터 입력 <br>
+<img src="../images/Channel settings - Coolant Temperature.png"
+  alt="Location of the connector"/>
+<br>
+
 Signal type : Signal <br>
 DLC : 8 <br>
 Byte order : Intel <br>
-Maximum과 minimum은 0으로 두고 저장하면 자동으로 반영되는 것으로 보임
+Maximum과 minimum은 0으로 두고 저장하면 자동으로 반영되는 것으로 보임 <br>
 
 ### 신호별 설정
+
+
 
 Name | Units | Scale | Offset | ID(HEX) | Start bit | Length | Data format 
 ---- | ----- | ----- | ------ | ------- | --------- | ------ | -----------
