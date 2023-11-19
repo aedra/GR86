@@ -32,3 +32,12 @@ Yaw rate | ? | -0.27250 | 0.0 | 138 | 32 | 16 | Signed
 
 Lateral/longitudinal acceleration은 원본 scale을 사용할 경우 m/sec<sup>2</sup>로 계산됨. 위 식에서는 9.8로 나눠서 g로 표시.<br>
 Yaw rate 단위가 불분명한데, °/sec로 추정됨. 추후 확인 필요함. 그리고 ID가 백삼십팔임. Acceleration의 13B와 헛갈리지 말것. <br>
+
+### Scene 파일
+
+GR86 SWLEE 20231118.REF : 위 신호별 설정과 2023.11.19 현재 Racelogic에서 제공하는 데이터를 추가하여 작성한 사용자 데이터베이스 파일
+
+GR86 SCN1 R1.VVHSN : 아래 그림 형태의 scene 파일
+
+<img src="../images/Screen capture - GR86 SCN1 R1.PNG"
+  alt="Location of the connector"/>
