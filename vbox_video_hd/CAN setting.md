@@ -6,12 +6,38 @@
 
 ## 설정 내역
 
-### 공통 사항
+### VBOX Video 설명
 
-아래 그림 참조하여 각 데이터 입력 <br>
+아래 그림은 VBOX Video 소프트웨어에서 CAN input을 직접 설정하는 메뉴이다. <br>
 <img src="../images/Channel settings - Coolant Temperature.png"
   alt="Location of the connector"/>
 <br>
+
+각 필드에 대한 설명은 다음과 같다.
+
+Name | 설명
+---- | ----
+Name | Scene 파일이나 Math에서 사용할 이름
+Units | 단위
+Scale | CAN으로 추출한 데이터 x를 바탕으로 원하는 값 y = a x + b로 계산할 때 기울기 a에 해당하는 값
+Offset | 위 식 y = a x + b 에서 b에 해당하는 값
+---- | ----
+Signal type | 그냥 Signal로 설정
+Id (hex) | CAN ID. 16진수 값으로 입력
+Is extended | Extended frame일 경우 선택. 일단 비워둘것
+Start bit | Dataframe 중 몇번째 비트부터 원하는 데이터가 있는지 지정
+Length | 데이터 길이. Bit 단위로 입력
+DLC | Data Length Code. 해당 패킷에서 데이터가 몇바이트 들어가 있는지 지정. 8 바이트 선택
+Maximum | Scale, offset 적용할 경우 최대 최소값 표시됨. 설정 시에는 그냥 0으로 입력해도 됨
+Minimum | 위와 동일
+Byte order | Little endian이면 Intel 선택. 아니면 Motorola 선택
+Data format | 부호 없는 정수일 경우 Unsigned 선택. 부호 있는 정수이면 Signed 선택. 나머지는 부동소수점일 경우 선택하는건데 이건 대부분 사용하지 않는것 같음
+
+
+
+
+### 공통 사항
+
 
 Signal type : Signal <br>
 DLC : 8 <br>
